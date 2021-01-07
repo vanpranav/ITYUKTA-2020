@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Register</title>
+    <link rel="icon" type="image/ico" href="img/logo.png" />
+    <link rel="stylesheet" type="text/css" href="css/registration.css">
+
+    <script type="text/javascript" src="js/regcheck.js"></script>
+</head>
+
+<body>
+    <center>
+        <h1 class="ityukta">ITYUKTA 2020</h1>
+        <span class="reg" style="display:inline-block;">Register Here</span>
+    </center>
+    <center><span class="reg" style="display:inline-block; color: gold;">
+            <div class=container-fluid>
+                <form name=regform action="pay.php" onsubmit="return my();" method=post>
+                    <div class=form-group style=float:left;margin-left:40px;font-size:20px;>
+                        <h3 class="works-h">Workshops you want to register:</h3>
+                        <div>
+                            <label class="container1 works">Data Analytics
+                                <input type=radio name=workshop id="DA" value="DA">
+                                <span class="checkmark1"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="container1 works">A Guide To BlockChain Ecosystem
+                                <input type=radio name=workshop id="BC" value="BC">
+                                <span class="checkmark1"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="container1 works">Robotic Process Automation
+                                <input type=radio name=workshop id="RPA" value="RPA">
+                                <span class="checkmark1"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="container1 works">Neural Link
+                                <input type=radio name=workshop id="NL" value="NL">
+                                <span class="checkmark1"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class=form-group style=float:left;margin-left:60px;font-size:20px;>
+                        <h3 class="events-h">Events you want to register:</h3>
+                        <div>
+                            <br>
+                            <label class="container events">Code Buddy
+                            <br>
+                            <input type="checkbox" name=CB value=CB>
+                            <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="container events">Squash the Code
+                                <input type="checkbox" name=STC value=STC>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="container events">Speed Typing
+                                <input type="checkbox" name=ST value=ST>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="container events">PPT Presentation
+                                <input type=checkbox name=PPT value=PPT>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="container events">Online Treasure Hunt
+                                <input type=checkbox name=OTH value=OTH>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class=from-group style=float:right;margin-right:40px;font-size:20px;>
+                            <h3 class="cred">Enter Your Credentials:</h3>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="text" placeholder="Enter your name" name=name size=40 required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" class=form-control placeholder="Enter your college" name=col size=40 required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="gen-h"><b>Gender</b></p>
+                                        <label class="container2 gen">Male
+                                            <input type=radio name="gender" value="male">
+                                            <span class="checkmark2"></span>
+                                        </label>
+                                        <label class="container2 gen">Female
+                                            <input type=radio name="gender" value="female">
+                                            <span class="checkmark2"></span>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="email" class=form-control placeholder="Enter your email" name=email size=40 required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" class=form-control placeholder="Enter your mobile number" size="number" name=phone required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button type="submit" name="amount" class="btn-active">Pay<i class='fas fa-paper-plane'></i></button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                </form>
+            </div>
+        </span>
+    </center>
+</body>
+
+</html>
