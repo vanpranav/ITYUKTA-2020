@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
     <?php include 'det.php'; ?>
 
     <center>

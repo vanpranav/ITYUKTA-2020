@@ -19,7 +19,7 @@ if(!(isset($b)))
 
 $sql = "INSERT INTO `register` (`name`, `college`, `email`, `gender`, `phone`, `workshop`, `technical`, `tid`, `total`, `time`) VALUES ('$a[0]', '$a[1]', '$a[2]', '$a[3]', '$a[4]', '$a[5]', '$a[6]', '$b', '$a[7]', '$a[8]');";
 
-if (!mysqli_query($con,$sql))
+if (!mysqli_query($con, $sql))
   echo("Error description: " . mysqli_error($con));
 ?>
 
